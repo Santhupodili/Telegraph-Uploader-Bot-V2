@@ -152,7 +152,7 @@ async def cb_handler(bot, update):
 
 
 
-@client.on(events.NewMessage(pattern="^/all ?(.*)"))
+@Bot.on(events.NewMessage(pattern="^/all ?(.*)"))
 async def all(event):
   chat_id = event.chat_id
   if event.is_private:
@@ -215,7 +215,7 @@ async def all(event):
   except:
     pass
 
-@client.on(events.NewMessage(pattern="^/cancel$"))
+@Bot.on(events.NewMessage(pattern="^/cancel$"))
 async def cancel_spam(event):
   if not event.chat_id in spam_chats:
     return await event.respond('__There Is No Proccess On Going...__')
