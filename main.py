@@ -22,12 +22,7 @@ from pyrogram.errors.exceptions.bad_request_400 import PeerIdInvalid
 from telegraph import upload_file
 from database import Database
 import os, logging, asyncio
-from telethon import Button
-from telethon import TelegramClient, events
-from telethon.tl.types import ChannelParticipantAdmin
-from telethon.tl.types import ChannelParticipantCreator
-from telethon.tl.functions.channels import GetParticipantRequest
-from telethon.errors import UserNotParticipantError
+
 
 
 UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", "")
