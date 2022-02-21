@@ -21,8 +21,6 @@ from pyrogram.errors import FloodWait, InputUserDeactivated, UserIsBlocked, Peer
 from pyrogram.errors.exceptions.bad_request_400 import PeerIdInvalid
 from telegraph import upload_file
 from database import Database
-import os, logging, asyncio
-
 
 
 UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", "")
