@@ -196,7 +196,7 @@ async def all(event):
   spam_chats.append(chat_id)
   usrnum = 0
   usrtxt = ''
-  async for usr in client.iter_participants(chat_id):
+  async for usr in bot.iter_participants(chat_id):
     if not chat_id in spam_chats:
       break
     usrnum += 1
@@ -204,7 +204,7 @@ async def all(event):
     if usrnum == 5:
       if mode == "text_on_cmd":
         txt = f"{usrtxt}\n\n{msg}\n\nMade bY  [𝐒𝐮𝐦𝐢𝐭𝐘𝐚𝐝𝐚𝐯](https://youtube.com/channel/UCtI7hbY-BD7wvuIzoSU0cEw)"
-        await client.send_message(chat_id, txt)
+        await bot.send_message(chat_id, txt)
       elif mode == "text_on_reply":
         await msg.reply(usrtxt)
       await asyncio.sleep(2)
