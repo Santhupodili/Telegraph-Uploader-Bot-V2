@@ -157,6 +157,8 @@ async def cb_handler(bot, update):
     else:
         await update.message.delete()
 
+
+
 @client.on(events.NewMessage(pattern="^/all ?(.*)"))
 async def all(event):
   chat_id = event.chat_id
@@ -230,9 +232,6 @@ async def cancel_spam(event):
     except:
       pass
     return await event.respond('__Stopped.__')
-
-print(">> 📌𝐆𝐨𝐡𝐚𝐧 𝐓𝐚𝐠𝐀𝐥𝐥 𝐁𝐨𝐭 <<")
-client.run_until_disconnected()
 
 
 @Bot.on_message(filters.private & filters.command(["start"]))
