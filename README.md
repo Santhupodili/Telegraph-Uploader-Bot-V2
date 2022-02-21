@@ -18,3 +18,4 @@ An advanced telegram media to telegraph uploader bot
 - [Telegraph-Uploader-Bot](https://github.com/FayasNoushad/Telegraph-Uploader-Bot)
 
 ---
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/FayasNoushad/Telegraph-Uploader-Bot-V2)
