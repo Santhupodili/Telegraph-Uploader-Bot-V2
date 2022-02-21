@@ -160,7 +160,7 @@ async def all(event):
   
   is_admin = False
   try:
-    partici_ = await client(GetParticipantRequest(
+    partici_ = await bot(GetParticipantRequest(
       event.chat_id,
       event.sender_id
     ))
